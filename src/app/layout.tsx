@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-head-element */
 import Link from 'next/link';
 import './globals.css';
+import Navbar from '@/components/Navbar';
 
 export default function RootLayout({
   children,
@@ -12,12 +13,7 @@ export default function RootLayout({
       <body>
         <main>
           <nav>
-            <Link href="/">
-              Home
-            </Link>
-            <Link href="/notes">
-              Notes
-            </Link>
+            <Navbar />
           </nav>
           {children}
         </main>
